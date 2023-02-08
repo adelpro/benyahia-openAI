@@ -1,6 +1,6 @@
 {
   "name": "benyahia-ai-backend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Experimenting with OpenAI different options, using reactjs and nodejs",
   "main": "server.js",
   "scripts": {

@@ -1,17 +1,17 @@
-const { Configuration, OpenAIApi } = require("openai");
+const { Configuration, OpenAIApi } = require('openai');
 const configuration = new Configuration({
   apiKey: process.env.APIKEY,
 });
 const openai = new OpenAIApi(configuration);
 
-// @desc GPT TEXT
+// @desc openAI TEXT
 // @Route POST /text
 // @Access Public
-const gptText = async (req, res) => {
+const openAIText = async (req, res) => {
   const { prompt, model } = req.body;
   try {
     // code-davinci-002
-    //text-davinci-003
+    // text-davinci-003
     const result = await openai.createCompletion({
       model,
       prompt,
@@ -32,16 +32,16 @@ const gptText = async (req, res) => {
     }
   }
 };
-// @desc GPT IMAGE
+// @desc openAI IMAGE
 // @Route POST /image
 // @Access Public
-const gptImage = async (req, res) => {
+const openAIImage = async (req, res) => {
   const { prompt } = req.body;
   try {
     const result = await openai.createImage({
       prompt,
       n: 1,
-      size: "512x512",
+      size: '512x512',
     });
     return res.json({ result: result.data.data[0].url });
   } catch (error) {
@@ -58,4 +58,4 @@ const gptImage = async (req, res) => {
   }
 };
 
-module.exports = { gptText, gptImage };
+module.exports = { openAIText, openAIImage };

@@ -1,0 +1,23 @@
+{
+  "name": "benyahia-ai-backend",
+  "version": "1.0.0",
+  "description": "Experimenting with OpenAI different options, using reactjs and nodejs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "reactjs",
+    "nodejs",
+    "openai",
+    "chatgpt"
+  ],
+  "author": "adelpro",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "openai": "^3.1.0"
+  }
+}

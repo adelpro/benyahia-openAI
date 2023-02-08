@@ -10,8 +10,6 @@ const openai = new OpenAIApi(configuration);
 const openAIText = async (req, res) => {
   const { prompt, model } = req.body;
   try {
-    // code-davinci-002
-    // text-davinci-003
     const result = await openai.createCompletion({
       model,
       prompt,

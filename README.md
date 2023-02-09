@@ -1,14 +1,20 @@
-# BENYAHIA-openAI
+# benyahia-openAI
 
 ## About
 
-Exploring different options of the official OpenAI npm package, including text generation, code completion and image generation.
+Delve into the vast possibilities offered by the official OpenAI npm package. Discover its capabilities in generating texts, providing code completions, filtering content, and even generating images. Expand your imagination and explore the limitless potential of this cutting-edge technology.
+
+Exploring different options of the official OpenAI npm package, including text generation, code completion, content filtering and image generation.
 
 ## Link to the official OpenAI npm package
 
 https://www.npmjs.com/package/openai
 
-## Gennearate an API key from OpenAI
+The OpenAI Node.js library provides convenient access to the OpenAI API from Node.js applications. Most of the code in this library is generated from our OpenAPI specification.
+
+Important note: this library is meant for server-side usage only, as using it in client-side browser code will expose your secret API key. See here for more details.
+
+## Generate an API key from OpenAI
 
 1. Sign in to then login to https://openai.com/api/
 
@@ -56,11 +62,11 @@ npm start
 
 ## Usage
 
-to ccess the API endpoints you have two choices
+To access the API endpoints you have two choices:
 
 ### Text
 
-to generate a text, send a post request to this endpoint (localhost:3500/openai/text) with a body in json format that contain two options:
+To generate a text, send a post request to this endpoint (localhost:3500/openai/text) with a body in json format that contain two options:
 
 **model** :
 Contain the model to use, you have 3 model
@@ -79,7 +85,7 @@ A set of models that can understand and generate natural language
 . CodexLimited beta
 A set of models that can understand and generate code, including translating natural language to code
 
-- "code-davinci-002" : Most capable Codex model. Particularly good at translating natural language to code. In addition to completing code, also supports inserting completions within code.
+- "code-davinci-002" : Most capable Codex model. Particularly good at translating natural language to code. In addition to completing code, it also supports inserting completions within code.
 
 - "code-cushman-001" : Almost as capable as Davinci Codex, but slightly faster. This speed advantage may make it preferable for real-time applications.
 
@@ -94,21 +100,21 @@ A fine-tuned model that can detect whether text may be sensitive or unsafe
 
 . Text generation :
 
-- url : localost:3500/openai/text
+- url : locahlost:3500/openai/text
 - method : post
 - body : {model:"text-davinci-003", promt:"write me a 90 word about nodejs"}
 
 . Code completion :
 
-- url : localost:3500/openai/text
+- url : localhost:3500/openai/text
 - method : post
 - body : {model:"code-davinci-002", promt:"const a = 1; const b = 10; console.log"}
 
 . Image Generation :
 
-- url : localost:3500/openai/image
+- url : localhost:3500/openai/image
 - method : post
-- body : {promt:"Algerien desert"}
+- body : {prompt:"Algerian desert"}
 
 ## More advanced options
 
@@ -149,10 +155,10 @@ How many completion to generate for each prompt.
 **n**
 (integer, Optional, Defaults to 1)
 
-How many image to generate for each prompt.
+How many images to generate for each prompt.
 
 **size**
 
 (string, optional, Default to '256x256', possible values '256x256' '512x512' '1024x1024')
 
-size of generated images
+The size of generated images

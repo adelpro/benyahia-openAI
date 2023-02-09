@@ -4,29 +4,27 @@
 
 Delve into the vast possibilities offered by the official OpenAI npm package. Discover its capabilities in generating texts, providing code completions, filtering content, and even generating images. Expand your imagination and explore the limitless potential of this cutting-edge technology.
 
-Exploring different options of the official OpenAI npm package, including text generation, code completion, content filtering and image generation.
-
 ## Link to the official OpenAI npm package
 
 https://www.npmjs.com/package/openai
 
-The OpenAI Node.js library provides convenient access to the OpenAI API from Node.js applications. Most of the code in this library is generated from our OpenAPI specification.
+> The OpenAI Node.js library provides convenient access to the OpenAI API from Node.js applications. Most of the code in this library is generated from our OpenAPI > specification.
 
-Important note: this library is meant for server-side usage only, as using it in client-side browser code will expose your secret API key. See here for more details.
+> Important note: this library is meant for server-side usage only, as using it in client-side browser code will expose your secret API key. See here for more details.
 
 ## Generate an API key from OpenAI
 
-1. Sign in to then login to https://openai.com/api/
+1. Sign in / login to then OpenAI website: https://openai.com/api/
 
-2. Go to View API KEYS, by clicking on the top right corner on the profile picture.
+2. Go to `View API KEYS`, by clicking on the top right corner on the profile picture to show the dropdown menu.
 
 ![](./images/openai-1.png)
 
-3. Click on the Create new secret key button
+3. Click on the `Create new secret key button` to generate a new API key.
 
 ![](./images/openai-2.png)
 
-4. Copy the generated API key then click on the "OK" button to close the modal
+4. Copy the generated API key then click on the "OK" button to close the modal (don't forget to copy, because the Key will be hidden for ever after).
 
 ![](./images/openai-3.png)
 
@@ -34,7 +32,7 @@ Important note: this library is meant for server-side usage only, as using it in
 
 1. Create a file named `.env`.
 
-2. Add the API KEY to the `.env` file
+2. Add the generared API KEY to the `.env` file in the `./backend` folder
 
 ```bash
 APIKEY="xxxx...."
@@ -42,23 +40,31 @@ APIKEY="xxxx...."
 
 3. Install the dependencies
 
-You have 3 dependencies
-
-. [Express](https://www.npmjs.com/package/express) : Fast, unopinionated, minimalist web framework for Node.js.
-
-. [dotenv](https://www.npmjs.com/package/dotenv) : Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
-
-. [openai](https://www.npmjs.com/package/openai) : The OpenAI Node.js library provides convenient access to the OpenAI API from Node.js applications. Most of the code in this library is generated from our OpenAPI specification.
-
 ```bash
 npm install
 ```
 
-Run server
+You have 3 dependencies
+
+- [Express](https://www.npmjs.com/package/express) : Fast, unopinionated, minimalist web framework for Node.js.
+
+- [dotenv](https://www.npmjs.com/package/dotenv) : Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
+
+- [openai](https://www.npmjs.com/package/openai) : The OpenAI Node.js library provides convenient access to the OpenAI API from Node.js applications. Most of the code in this library is generated from our OpenAPI specification.
+
+4. Run server
 
 ```bash
 npm start
 ```
+
+Or in the developement mode
+
+```bash
+npm run dev
+```
+
+N.B: we are using the new --watch flag in the nodejs 18 to continuesy watch any changes in our files in the dev mode).
 
 ## Usage
 

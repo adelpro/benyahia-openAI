@@ -58,13 +58,13 @@ You have 3 dependencies
 npm start
 ```
 
-Or in the developement mode
+Or in the development mode
 
 ```bash
 npm run dev
 ```
 
-N.B: we are using the new --watch flag in the nodejs 18 to continuesy watch any changes in our files in the dev mode).
+N.B: we are using the new --watch flag in the nodejs 18 to continuously watch any changes in our files in the dev mode).
 
 ## Usage
 
@@ -88,7 +88,7 @@ A set of models that can understand and generate natural language
 
 - "text-ada-001": Capable of very simple tasks, usually the fastest model in the GPT-3 series, and lowest cost.
 
-. CodexLimited beta
+. Codex Limited beta
 A set of models that can understand and generate code, including translating natural language to code
 
 - "code-davinci-002" : Most capable Codex model. Particularly good at translating natural language to code. In addition to completing code, it also supports inserting completions within code.
@@ -108,7 +108,7 @@ A fine-tuned model that can detect whether text may be sensitive or unsafe
 
 - url : locahlost:3500/openai/text
 - method : post
-- body : {model:"text-davinci-003", promt:"write me a 90 word about nodejs"}
+- body : {model:"text-davinci-003", prompt:"write me a 90 word about nodejs"}
 
 . Code completion :
 
